@@ -1,4 +1,6 @@
-﻿using System;
+﻿﻿using System;
+using System.Collections.Generic;
+using System.IO;
 
 namespace FilePower2
 {
@@ -6,7 +8,14 @@ namespace FilePower2
     {
         private static void Main(string[] args)
         {
-            Console.WriteLine("Hello LP1!");
+            using StreamWriter file = new StreamWriter(args[0]);
+
+            while (true)
+            {
+                string newLine = Console.ReadLine();
+                if (string.IsNullOrEmpty(newLine)) {break;}
+                else {file.WriteLine(newLine);}
+            }
         }
     }
 }
