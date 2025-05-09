@@ -1,4 +1,4 @@
-﻿﻿using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
 
@@ -10,7 +10,7 @@ namespace FilePower1
         {
             string file = args[0];
             Queue<string> queueLines = new Queue<string>();
-            
+
             while (true)
             {
                 string newLine = Console.ReadLine();
