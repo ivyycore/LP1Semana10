@@ -13,10 +13,10 @@ namespace CharSets
             {
                 try
                 {
-                    string filecnt = cnt.ReadAllText(arg);
-                    foreach (char c in filecnt);
+                    string filecnt = File.ReadAllText(arg);
+                    foreach (char c in filecnt)
                     {
-                        
+                        if (!char.IsWhiteSpace(c)) &&
                     }
 
                 }
