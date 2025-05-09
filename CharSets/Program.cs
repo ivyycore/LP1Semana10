@@ -8,7 +8,14 @@ namespace CharSets
     {
         private static void Main(string[] args)
         {
-            Console.WriteLine("Hello LP1!");
+            using StreamReader file = new StreamReader(args[0]);
+
+            while (true)
+            {
+                string newLine = Console.ReadLine();
+                if (string.IsNullOrEmpty(newLine)) {break;}
+                else {file.WriteLine(newLine);}
+            }
         }
     }
 }
