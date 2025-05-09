@@ -17,8 +17,14 @@ namespace CharSets
                     foreach (char c in filecnt)
                     {
                         if (!char.IsWhiteSpace(c) && !cnt.Contains(c))
+                        {
+                            cnt.Add(c);
+                        }
                     }
-
+                }
+                catch
+                {
+                    break;
                 }
             }
 
