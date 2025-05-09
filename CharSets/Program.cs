@@ -13,9 +13,12 @@ namespace CharSets
             {
                 try
                 {
-                    string filecnt = filecnt.ReadAllText(arg);
+                    string filecnt = cnt.ReadAllText(arg);
                     foreach (char c in filecnt);
-                    
+                    {
+                        
+                    }
+
                 }
             }
 
