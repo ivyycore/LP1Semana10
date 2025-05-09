@@ -22,6 +22,11 @@ namespace IntCollections
                 queue.Enqueue(i);
                 hashSet.Add(i);
             }
+            
+            PrintCollection(list);
+            PrintCollection(stack);
+            PrintCollection(queue);
+            PrintCollection(hashSet);
         }
     }
 }
