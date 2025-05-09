@@ -1,4 +1,6 @@
-﻿using System;
+﻿﻿using System;
+using System.Collections.Generic;
+using System.Text;
 
 namespace IntCollections
 {
@@ -6,7 +8,10 @@ namespace IntCollections
     {
         private static void Main(string[] args)
         {
-            Console.WriteLine("Hello LP1!");
+        private static void Main(string[] args)
+        {
+
+        }
         }
     }
 }
