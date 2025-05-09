@@ -14,6 +14,14 @@ namespace IntCollections
             Stack<int> stack = new Stack<int>();
             Queue<int> queue = new Queue<int>();
             HashSet<int> hashSet = new HashSet<int>();
+            
+            foreach (int i in array)
+            {
+                list.Add(i);
+                stack.Push(i);
+                queue.Enqueue(i);
+                hashSet.Add(i);
+            }
         }
     }
 }
