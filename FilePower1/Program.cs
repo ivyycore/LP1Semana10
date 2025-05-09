@@ -1,4 +1,6 @@
-﻿using System;
+﻿﻿using System;
+using System.Collections.Generic;
+using System.IO;
 
 namespace FilePower1
 {
@@ -6,7 +8,9 @@ namespace FilePower1
     {
         private static void Main(string[] args)
         {
-            Console.WriteLine("Hello LP1!");
+            string file = args[0];
+            Queue<string> queueLines = new Queue<string>();
+
         }
     }
 }
