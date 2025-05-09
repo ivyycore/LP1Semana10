@@ -28,5 +28,17 @@ namespace IntCollections
             PrintCollection(queue);
             PrintCollection(hashSet);
         }
+        private static void PrintCollection<T>(IEnumerable<T> collection)
+        {
+            string fullName = collection.GetType().Name;
+            int backtickIndex = fullName.IndexOf('`');
+            if (backtickIndex > 0) fullName = fullName.Substring(0, backtickIndex);
+            StringBuilder stringBuilder = new StringBuilder($"{fullName}: ");
+            foreach (var item in collection)
+            {
+                stringBuilder.Append(item + ", ");
+            }
+            Console.WriteLine(stringBuilder.ToString().Substring(0, stringBuilder.Length - 2));
+        }
     }
 }
