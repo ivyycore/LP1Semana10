@@ -8,14 +8,10 @@ namespace CharSets
     {
         private static void Main(string[] args)
         {
-            using StreamReader file = new StreamReader(args[0]);
+            List<char> cnt = new List<char>();
+            foreach (string arg in args)
+            {}
 
-            while (true)
-            {
-                string newLine = Console.ReadLine();
-                if (string.IsNullOrEmpty(newLine)) {break;}
-                else {file.WriteLine(newLine);}
-            }
         }
     }
 }
