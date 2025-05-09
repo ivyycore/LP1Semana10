@@ -16,7 +16,7 @@ namespace CharSets
                     string filecnt = File.ReadAllText(arg);
                     foreach (char c in filecnt)
                     {
-                        if (!char.IsWhiteSpace(c)) &&
+                        if (!char.IsWhiteSpace(c) && !cnt.Contains(c))
                     }
 
                 }
