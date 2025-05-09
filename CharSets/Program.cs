@@ -27,6 +27,11 @@ namespace CharSets
                     break;
                 }
             }
+            cnt.Sort();
+            foreach (char c in cnt)
+            {
+                Console.WriteLine(c);
+            }
 
         }
     }
